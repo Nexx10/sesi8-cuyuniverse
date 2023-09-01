@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div
+      class="container d-flex justify-content-center align-items-center min-vh-100"
+    >
+      <div class="d-flex flex-column">
+        <h1>Password Generator</h1>
+        <div class="d-flex flex-column gap-2 mt-2">
+          <label for="password" class="text-uppercase fw-bold"
+            >Panjang Password</label
+          >
+          <input
+            type="number"
+            class="form-control form-control-lg"
+            id="passwordLength"
+          />
+          <label for="password" class="text-uppercase fw-bold">Password</label>
+          <input
+            type="password"
+            class="form-control form-control-lg"
+            id="password"
+            disabled
+          />
+
+          <button
+            onclick="getPassword()"
+            class="btn btn-primary text-uppercase fw-bold btn-lg btn-dark mt-2"
+          >
+            generate password
+          </button>
+          <a
+            onclick="savePassword()"
+            class="btn btn-primary text-uppercase fw-bold btn-lg btn-primary mt-2"
+            id="saveButton"
+          >
+            save password
+          </a>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
